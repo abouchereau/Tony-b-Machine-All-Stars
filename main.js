@@ -78,7 +78,7 @@ function promptIt(isSplash, win) { //function to handle prompting
 
 
 app.on('ready', function () {
-	var menu = Menu.buildFromTemplate([
+	/*var menu = Menu.buildFromTemplate([
 		{
 			label: 'Menu',
 			submenu: [
@@ -97,7 +97,7 @@ app.on('ready', function () {
 			]
 		}
 	])
-	Menu.setApplicationMenu(menu);
+	Menu.setApplicationMenu(menu);*/
 	
 	let win = new BrowserWindow({
 		show: false,
@@ -105,10 +105,16 @@ app.on('ready', function () {
 			plugins: true
 		}
 	})
-	promptIt(false, win);
-	win.webContents.session.clearCache(function () {
-		//clearCache
-	});
+	win.loadURL("https://www.tony-b.org");
+	win.maximize();
+	setTimeout(() => {
+		win.show(); //pauses program for 1 second to allow web-page to load before rendering.
+		win.webContents.session.clearCache(function () {
+			//clearCache
+		});
+	}, 1000);
+	//promptIt(false, win);
+
 	
 })
 
