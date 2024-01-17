@@ -1,25 +1,24 @@
 {
-  "name": "flash-browser2",
-  "version": "0.0.1",
-  "description": "A small browser capable of viewing/displaying pages with embedded flash content.",
+  "name": "TonybMachineAllStars",
+  "version": "1.0.0",
+  "description": "Desktop application for playing to old Tony-b Machine made in Flash",
   "main": "main.js",
   "author": {
-    "name": "tootyta12"
+    "name": "Tony-b"
   },
   "directories": {
     "flashver": "flashver"
   },
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . FlashBrowser2 --platform=all",
+    "build": "electron-packager . TonybMachineAllStars --platform=all",
     "pack": "build --dir",
     "dist": "electron-builder"
   },
   "devDependencies": {
     "electron": "^11.4.9",
     "electron-builder": "^22.11.7",
-    "electron-packager": "^15.2.0",
-    "electron-prompt": "^1.6.2"
+    "electron-packager": "^15.2.0"
   },
   "dependencies": {}
 }
