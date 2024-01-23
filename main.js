@@ -50,7 +50,7 @@ app.on('ready', function () {
 			plugins: true
 		}
 	})
-	win.loadURL("https://www.tony-b.org");
+	win.loadURL("https://www.tony-b.org/all-stars");
 	win.maximize();
 	setTimeout(() => {
 		win.show(); //pauses program for 1 second to allow web-page to load before rendering.
